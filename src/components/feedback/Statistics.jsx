@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './Feedback.module.css';
 
-export const Statistics = ({ good, neutral, bad, total, positive }) => {
+const Statistics = ({ good, neutral, bad, total, positive }) => {
   return (
     <div className={css.container}>
       <ul>
@@ -22,3 +22,5 @@ Statistics.propTypes = {
   total: PropTypes.number.isRequired,
   positive: PropTypes.number.isRequired,
 };
+
+export default Statistics;
